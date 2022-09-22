@@ -1,0 +1,2 @@
+option('girgen', type: 'feature', value: 'auto')
+option('gi_docgen', type: 'feature', value: 'auto')

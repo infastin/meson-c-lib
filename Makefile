@@ -28,6 +28,9 @@ gen-enable:
 doc: gen-enable
 	meson compile -C $(BUILD_DIR) libtribble-doc
 
+reconfigure:
+	meson $(BUILD_DIR) --reconfigure
+
 install:
 	ninja -C $(BUILD_DIR) install
 
@@ -36,4 +39,4 @@ test:
 
 all: build ctags compdb
 
-.PHONY: all build ctags compdb clean install doc test
+.PHONY: all build ctags compdb clean install doc test reconfigure

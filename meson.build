@@ -1,4 +1,4 @@
-project('libproject', 'c',
+project('project', 'c',
   version: '1.0.0',
   default_options: [
     'buildtype=debugoptimized',
@@ -77,6 +77,6 @@ pkg_config.generate(
   libraries: libproject,
   version: libversion,
   filebase: pkg_api_name,
-  name: 'project',
+  name: 'Project',
   description: 'Some C library',
 )

@@ -8,7 +8,7 @@ libproject = both_libraries('project', src_files, install: true)
 install_headers(header_files, subdir: 'project')
 
 libproject_dep = declare_dependency(
-  sources: header_files,
+  sources: [src_files, header_files],
   link_with: libproject,
   include_directories: include_directories('.'),
 )

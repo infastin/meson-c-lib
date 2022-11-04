@@ -31,6 +31,9 @@ doc: gen-enable
 reconfigure:
 	meson $(BUILD_DIR) --reconfigure
 
+wipe:
+	meson setup --wipe $(BUILD_DIR)
+
 install:
 	ninja -C $(BUILD_DIR) install
 
@@ -39,4 +42,4 @@ test:
 
 all: build ctags compdb
 
-.PHONY: all build ctags compdb clean install doc test reconfigure
+.PHONY: all build ctags compdb clean install doc test reconfigure wipe

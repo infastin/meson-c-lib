@@ -26,7 +26,7 @@ gen-enable:
 	meson $(BUILD_DIR) --reconfigure
 
 doc: gen-enable
-	meson compile -C $(BUILD_DIR) libtribble-doc
+	meson compile -C $(BUILD_DIR) libproject-doc
 
 reconfigure:
 	meson $(BUILD_DIR) --reconfigure
